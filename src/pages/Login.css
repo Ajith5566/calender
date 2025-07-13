@@ -1,0 +1,38 @@
+*{
+    margin:0px;
+    border: 0px;
+    
+#login{
+    background-image: url("../assets/images/flatlay-medical-local-doctor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+.email{
+    color: #FFFFFF;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 27rem;
+    height: 20rem;
+    background-color: black;
+    
+}
+.btn{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+.form::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 60%;
+    text-indent: 22px;
+}
+
+.btn:hover {
+  background-color: black !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}

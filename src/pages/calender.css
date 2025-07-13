@@ -1,0 +1,156 @@
+/* Modal background overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Appointment form */
+.appointment-form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Calendar wrapper */
+.calendar-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Base calendar styling */
+.react-calendar {
+  width: 100% !important;
+  max-width: 100% !important;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ced4da;
+  background: inherit;
+  color: inherit;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Calendar tiles */
+.react-calendar__tile {
+  background: transparent;
+  color: inherit;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Appointment mini tag inside tiles */
+.calendar-appointment {
+  font-size: 0.7rem;
+  background-color: rgba(0, 123, 255, 0.1);
+  padding: 2px 4px;
+  margin-top: 2px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mobile view cards */
+.appointment-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+/* Buttons for edit/delete */
+.cancel-btn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.calendar-wrapper.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.react-calendar.dark {
+  background-color: #2b2b2b;
+  color: white;
+  border: 1px solid #444;
+}
+
+.react-calendar__tile.dark {
+  color: white;
+}
+
+.calendar-appointment.dark {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.appointment-card.dark {
+  background-color: #2a2a2a;
+  border-color: #444;
+  color: white;
+}
+
+.appointment-form.dark {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+/* === LIGHT MODE === */
+body.light-mode {
+  background-color: #ffffff;
+  color: black;
+}
+
+.calendar-wrapper.light {
+  background-color: #ffffff;
+  color: black;
+}
+
+.appointment-card.light {
+  background-color: #f8f9fa;
+  color: black;
+  border-color: #ced4da;
+}
+
+.appointment-form.light {
+  background-color: white;
+  color: black;
+}
+
+.react-calendar.light {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #ced4da;
+}
